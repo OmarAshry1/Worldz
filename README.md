@@ -3,16 +3,16 @@
 Weclome to Worldz. this README file will guild you on how to use Worldz.
 
 # Description
-	Worldz is a social media app made with java,javafx and scene builder. This app allows for networking between friends all in the comfort of your desktop.
+Worldz is a social media app made with java,javafx and scene builder. This app allows for networking between friends all in the comfort of your desktop.
 	
 # Installation 
-	All files are available in the following github.
+All files are available in the following github.
 	
 # Requirements
-	**- Java Compiler/IDE:** IntelliJ (JVM,SDK,JFX)
-	**- Network Connection**
-	**- Connect to SQL database** by installing [Connector](https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-j-8.4.0.zip)
-	**- Open Intellij and follow these steps:**
+**- Java Compiler/IDE:** IntelliJ (JVM,SDK,JFX)
+**- Network Connection**
+**- Connect to SQL database** by installing [Connector](https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-j-8.4.0.zip)
+**- Open Intellij and follow these steps:**
  1-![1](https://github.com/OmarAshry1/Worldz/assets/167476967/18c67e1b-49d9-44b8-879e-ac1d898bde9d)
  
  2-![2](https://github.com/OmarAshry1/Worldz/assets/167476967/ae3fbb7f-02ce-49b1-902e-a53014d4f08c)
