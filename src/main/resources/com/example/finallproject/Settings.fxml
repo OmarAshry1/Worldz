@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finallproject.SettingsController">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="657.0" prefHeight="43.0" prefWidth="1001.0" style="-fx-background-color: #074fbe;">
+            <children>
+                <Button fx:id="homepage" layoutX="107.0" layoutY="3.0" mnemonicParsing="false" onAction="#switchtohomepage" style="-fx-background-color: #0000; -fx-text-fill: white; -fx-font-style: Century Schoolbook; -fx-font-style: italic;" text="Dashboard">
+                    <font>
+                        <Font name="Century Schoolbook Italic" size="18.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="file:/C:/Users/ahmed/IdeaProjects/FinallProject/src/home.png" />
+                            </image></ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="profilepage" layoutX="354.0" layoutY="4.0" mnemonicParsing="false" onAction="#switchtoprofile" style="-fx-background-color: #0000; -fx-text-fill: white; -fx-font-style: Century Schoolbook; -fx-font-style: italic;" text="ProfilePage">
+                    <font>
+                        <Font name="Century Schoolbook Italic" size="18.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="file:/C:/Users/ahmed/IdeaProjects/FinallProject/src/profile.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="settings" layoutX="602.0" layoutY="4.0" mnemonicParsing="false" style="-fx-background-color: #0000; -fx-text-fill: white; -fx-font-style: Century Schoolbook; -fx-font-style: italic;" text="Settings">
+                    <font>
+                        <Font name="Century Schoolbook Italic" size="18.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="file:/C:/Users/ahmed/IdeaProjects/FinallProject/src/settings.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="logout" layoutX="855.0" layoutY="4.0" mnemonicParsing="false" onAction="#switchtologinpage" style="-fx-background-color: #0000; -fx-text-fill: white; -fx-font-style: Century Schoolbook; -fx-font-style: italic;" text="Logout">
+                    <font>
+                        <Font name="Century Schoolbook Italic" size="18.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="file:/C:/Users/ahmed/IdeaProjects/FinallProject/src/logout.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="662.0" prefWidth="1000.0" style="-fx-background-color: #101010;">
+            <children>
+                <Text layoutX="963.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                <ComboBox fx:id="Edit" layoutX="771.0" layoutY="133.0" prefHeight="43.0" prefWidth="192.0" promptText="Choose data type" style="-fx-background-color: #074fbe; -fx-text-fill: #101010;" />
+                <TextField fx:id="edittext" layoutX="505.0" layoutY="188.0" prefHeight="31.0" prefWidth="243.0" />
+                <Button fx:id="submit" layoutX="562.0" layoutY="228.0" mnemonicParsing="false" onAction="#submit" style="-fx-background-color: #074fbe;" text="Submit" textFill="#101010">
+                    <font>
+                        <Font name="Arial Black" size="25.0" />
+                    </font>
+                </Button>
+                <Text fill="WHITE" layoutX="14.0" layoutY="113.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Italic" size="42.0" />
+                    </font>
+                </Text>
+                <Label fx:id="mess" alignment="CENTER" layoutX="62.0" layoutY="585.0" prefHeight="52.0" prefWidth="876.0" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            <Text fx:id="mailtitle" fill="WHITE" layoutX="14.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email : ">
+               <font>
+                  <Font name="Javanese Text" size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="mailfield" fill="WHITE" layoutX="16.0" layoutY="199.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="411.27577209472656">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="passtitle" fill="WHITE" layoutX="15.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password : ">
+               <font>
+                  <Font name="Javanese Text" size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="passfield" fill="WHITE" layoutX="17.0" layoutY="293.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="411.27577209472656">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="usertitle" fill="WHITE" layoutX="16.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username : ">
+               <font>
+                  <Font name="Javanese Text" size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="userfield" fill="WHITE" layoutX="18.0" layoutY="382.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="243.20000000000005">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="datetitle" fill="WHITE" layoutX="291.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birthday : ">
+               <font>
+                  <Font name="Javanese Text" size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="datefield" fill="WHITE" layoutX="293.0" layoutY="247.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="148.0">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="agetitle" fill="WHITE" layoutX="292.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age : ">
+               <font>
+                  <Font name="Javanese Text" size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="agefield" fill="WHITE" layoutX="367.0" layoutY="297.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="52.0">
+               <font>
+                  <Font name="Georgia" size="33.0" />
+               </font>
+            </Text>
+            <Text fx:id="phonetitle" fill="WHITE" layoutX="17.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number : ">
+               <font>
+                  <Font name="Javanese Text" size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="phonefield" fill="WHITE" layoutX="19.0" layoutY="465.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="243.20000000000005">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="gendertitle" fill="WHITE" layoutX="291.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:">
+               <font>
+                  <Font name="Javanese Text" size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="genderfield" fill="WHITE" layoutX="403.0" layoutY="352.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="52.0">
+               <font>
+                  <Font name="Georgia" size="33.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="503.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="modify your data :">
+               <font>
+                  <Font name="Berlin Sans FB" size="32.0" />
+               </font>
+            </Text>
+            <Text fx:id="biotitle" fill="WHITE" layoutX="17.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bio :">
+               <font>
+                  <Font name="Javanese Text" size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="biofield" fill="WHITE" layoutX="19.0" layoutY="554.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="505.5999633789063">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="photo" fitHeight="195.0" fitWidth="234.0" layoutX="529.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/ahmed/IdeaProjects/FinallProject/src/profileph.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="photofield" fill="WHITE" layoutX="291.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Photo :">
+               <font>
+                  <Font name="Javanese Text" size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="changephoto" layoutX="272.0" layoutY="449.0" mnemonicParsing="false" onAction="#changePicOnAction" style="-fx-background-color: #074fbe;" text="Change photo" textFill="#101010">
+               <font>
+                  <Font name="Arial Black" size="25.0" />
+               </font>
+            </Button>
+            <Text fx:id="IDtitle" fill="WHITE" layoutX="291.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :">
+               <font>
+                  <Font name="Javanese Text" size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="IDfield" fill="WHITE" layoutX="359.0" layoutY="164.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="52.0">
+               <font>
+                  <Font name="Georgia" size="33.0" />
+               </font>
+            </Text>
+            </children></AnchorPane>
+        <AnchorPane prefHeight="58.0" prefWidth="1000.0" style="-fx-background-color: #074fbe;">
+            <children>
+                <Label fx:id="titlefield" layoutX="52.0" layoutY="9.0" text="Worldz" textAlignment="CENTER">
+                    <font>
+                        <Font name="Gill Sans Ultra Bold" size="30.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="52.0" fitWidth="52.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="file:/C:/Users/ahmed/IdeaProjects/FinallProject/src/earth.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</Pane>

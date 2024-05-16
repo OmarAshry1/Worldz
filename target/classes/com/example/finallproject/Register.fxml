@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="825.0" style="-fx-background-color: #101010;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finallproject.RegisterController">
+    <children>
+        <Text fill="#074fbe" layoutX="400.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connect with the world">
+            <font>
+                <Font name="Segoe UI Black" size="34.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="598.0" fitWidth="532.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/ahmed/IdeaProjects/FinallProject/src/world.jpg" />
+         </image>
+        </ImageView>
+        <Text fill="#074fbe" layoutX="485.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="in one touch!">
+            <font>
+                <Font name="Segoe UI Black" size="34.0" />
+            </font>
+        </Text>
+        <TextField fx:id="email" layoutX="459.0" layoutY="146.0" prefHeight="25.0" prefWidth="271.0" promptText="Email" style="-fx-background-color: #074fbe; -fx-text-fill: #101010; -fx-prompt-text-fill: #101010;">
+            <effect>
+                <DropShadow />
+            </effect>
+            <font>
+                <Font name="Yu Gothic UI Semibold" size="17.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="username" layoutX="459.0" layoutY="192.0" prefHeight="25.0" prefWidth="271.0" promptText="Username" style="-fx-background-color: #074fbe; -fx-text-fill: #101010; -fx-prompt-text-fill: #101010;">
+            <effect>
+                <DropShadow />
+            </effect>
+            <font>
+                <Font name="Yu Gothic UI Semibold" size="17.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="phone_number" layoutX="459.0" layoutY="282.0" prefHeight="37.0" prefWidth="172.0" promptText="Phone number" style="-fx-background-color: #074fbe; -fx-text-fill: #101010; -fx-prompt-text-fill: #101010;">
+            <effect>
+                <DropShadow />
+            </effect>
+            <font>
+                <Font name="Yu Gothic UI Semibold" size="17.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="birthday" layoutX="459.0" layoutY="328.0" prefHeight="25.0" prefWidth="271.0" promptText="Birthday (YYYY-MM-dd)" style="-fx-background-color: #074fbe; -fx-text-fill: #101010; -fx-prompt-text-fill: #101010;">
+            <effect>
+                <DropShadow />
+            </effect>
+            <font>
+                <Font name="Yu Gothic UI Semibold" size="17.0" />
+            </font>
+        </TextField>
+        <Button fx:id="login2" layoutX="475.0" layoutY="512.0" mnemonicParsing="false" onAction="#switchtologin" prefHeight="56.0" prefWidth="240.0" style="-fx-background-color: #074fbe;" text="Login" textFill="#101010">
+            <font>
+                <Font name="Yu Gothic UI Semibold" size="24.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button fx:id="register2" layoutX="475.0" layoutY="440.0" mnemonicParsing="false" onAction="#register" prefHeight="56.0" prefWidth="240.0" style="-fx-background-color: #074fbe;" text="Register" textFill="#101010">
+            <font>
+                <Font name="Yu Gothic UI Semibold" size="24.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <ComboBox fx:id="gender" layoutX="644.0" layoutY="281.0" prefHeight="37.0" prefWidth="86.0" promptText="Gender" style="-fx-background-color: #074fbe; -fx-text-fill: #101010; -fx-prompt-text-fill: #101010; -fx-font-size: 12;">
+            <effect>
+                <DropShadow />
+            </effect></ComboBox>
+        <TextField fx:id="bio" layoutX="459.0" layoutY="374.0" prefHeight="46.0" prefWidth="271.0" promptText="Bio" style="-fx-background-color: #074fbe; -fx-text-fill: #101010; -fx-prompt-text-fill: #101010;">
+            <effect>
+                <DropShadow />
+            </effect>
+            <font>
+                <Font name="Yu Gothic UI Semibold" size="17.0" />
+            </font>
+        </TextField>
+        <Text fx:id="reg" fill="#074fbe" layoutX="459.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="356.02197265625">
+            <font>
+                <Font name="Yu Gothic UI Semibold" size="19.0" />
+            </font></Text>
+        <PasswordField fx:id="password" layoutX="459.0" layoutY="237.0" prefHeight="37.0" prefWidth="271.0" promptText="password" style="-fx-background-color: #074fbe; -fx-text-fill: #101010; -fx-prompt-text-fill: #101010;">
+            <font>
+                <Font name="Yu Gothic UI Semibold" size="17.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </PasswordField>
+    </children>
+</Pane>

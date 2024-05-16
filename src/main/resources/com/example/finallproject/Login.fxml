@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="620.0" style="-fx-background-color: #074fbe;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finallproject.LoginController">
+    <children>
+        <AnchorPane layoutX="270.0" prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #101010;">
+            <children>
+                <TextField fx:id="email" layoutX="49.0" layoutY="179.0" prefHeight="26.0" prefWidth="274.0" promptText="Email" style="-fx-background-color: #074fbe; -fx-text-fill: #101010; -fx-prompt-text-fill: #101010;">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <font>
+                        <Font name="Yu Gothic UI Semibold" size="17.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="password" layoutX="49.0" layoutY="241.0" prefHeight="26.0" prefWidth="274.0" promptText="Password" style="-fx-background-color: #074fbe; -fx-text-fill: #202020; -fx-prompt-text-fill: #202020;">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <font>
+                        <Font name="Yu Gothic UI Semibold" size="17.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="login" layoutX="49.0" layoutY="317.0" mnemonicParsing="false" onAction="#login" prefHeight="37.0" prefWidth="274.0" style="-fx-background-color: #074fbe; -fx-text-fill: #101010;" text="Login" textFill="#101010">
+                    <font>
+                        <Font name="Yu Gothic UI Semibold" size="24.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Label layoutX="81.0" layoutY="50.0" text="Sign in" textFill="#074fbe">
+                    <font>
+                        <Font name="Yu Gothic UI Semibold" size="60.0" />
+                    </font>
+                </Label>
+                <Text fx:id="nomail" fill="#0066b2" layoutX="49.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="274.4">
+                    <font>
+                        <Font name="Palatino Linotype" size="20.0" />
+                    </font>
+                </Text>
+            </children>
+            <effect>
+                <BoxBlur height="0.0" width="0.0" />
+            </effect>
+        </AnchorPane>
+        <Label layoutX="14.0" layoutY="55.0" prefHeight="156.0" prefWidth="256.0" text="WELCOME" textFill="#101010">
+            <font>
+                <Font name="Segoe UI Black" size="48.0" />
+            </font>
+        </Label>
+        <Label layoutX="39.0" layoutY="162.0" prefHeight="156.0" prefWidth="202.0" text="Worldz!" textFill="#101010">
+            <font>
+                <Font name="Segoe UI Black" size="48.0" />
+            </font>
+        </Label>
+        <Label layoutX="103.0" layoutY="149.0" prefHeight="79.0" prefWidth="78.0" text="TO" textFill="#101010">
+            <font>
+                <Font name="Segoe UI Black" size="48.0" />
+            </font>
+        </Label>
+        <Label layoutX="78.0" layoutY="361.0" text="New here?" textFill="#101010">
+            <font>
+                <Font name="Yu Gothic UI Semibold" size="26.0" />
+            </font>
+        </Label>
+        <Button fx:id="register" layoutX="26.0" layoutY="389.0" mnemonicParsing="false" onAction="#switchtoregister" prefHeight="37.0" prefWidth="232.0" style="-fx-background-color: transparent; -fx-text-fill: #101010;" text="Register Now" textFill="#101010">
+            <font>
+                <Font name="Yu Gothic UI Semibold" size="30.0" />
+            </font>
+        </Button>
+    </children>
+</Pane>
