@@ -9,9 +9,13 @@ Worldz is a social media app made with java,javafx and scene builder. This app a
 All files are available in the following github.
 	
 # Requirements
-**- Java Compiler/IDE:** IntelliJ (JVM,SDK,JFX)
+
+**- Java Compiler/IDE:** IntelliJ (JVM,SDK,JFX)**
+
 **- Network Connection**
-**- Connect to SQL database** by installing [Connector](https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-j-8.4.0.zip)
+
+**- Connect to SQL database** by installing [Connector](https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-j-8.4.0.zip)**
+
 **- Open Intellij and follow these steps:**
 
  1-
